@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-const port = 5000
+const port = 3000
 const githubData = {
     "login": "YASAR300",
     "id": 179014663,
@@ -40,7 +40,9 @@ const githubData = {
 app.get('/', (req, res) => {
     res.send('hello world!')
 })
-
+app.get('/', (req, res) => {
+    res.send('hello world!')
+})
 app.get('/x', (req, res) => {
     res.send('applecom')
 })
